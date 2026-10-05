@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 360px;
+  min-height: 500px;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #e5e7eb;
+}
+
+.app-shell {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8fafc, #cbd5e1);
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+.privacy-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #2d3748;
+  background: #111827;
+  margin-bottom: 16px;
+}
+
+.privacy-card span {
+  font-size: 18px;
+}
+
+.privacy-card strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.privacy-card p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.primary-btn {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+  color: #111827;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.96;
+}
+
+.status-text {
+  min-height: 18px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #a5b4cf;
+}
+
+.folder-indexer label {
+  display: block;
+  margin: 4px 0 7px;
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+.folder-controls {
+  display: flex;
+  gap: 7px;
+}
+
+.folder-controls input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 9px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 11px;
+}
+
+.folder-controls button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #d1fae5;
+  color: #065f46;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background: #1f2937;
+  margin: 20px 0 16px;
+}
+
+.section-label {
+  display: block;
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 14px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #93c5fd;
+}
+
+.results {
+  margin-top: 14px;
+}
+
+.memory-result {
+  background: #111827;
+  border: 1px solid #243041;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.memory-result h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #f9fafb;
+  line-height: 1.3;
+}
+
+.memory-kicker,
+.why-label {
+  color: #86efac;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 6px;
+}
+
+.memory-result .preview {
+  margin: 8px 0 12px;
+  font-size: 12px;
+  color: #f3f4f6;
+  line-height: 1.5;
+}
+
+.memory-result .why-label {
+  color: #93c5fd;
+  letter-spacing: 0;
+}
+
+.memory-result .reason {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: #d1d5db;
+  line-height: 1.45;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.result-actions button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.result-actions .open-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.result-actions .forget-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.no-results,
+.loading-state {
+  border: 1px dashed #374151;
+  background: #111827;
+  border-radius: 10px;
+  padding: 12px;
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.filename {
+  overflow-wrap: anywhere;
+  opacity: 0.75;
+}
+
+.ai-status {
+  margin: -8px 0 14px 48px;
+  color: #a7f3d0;
+  font-size: 10px;
+}
+
+.ai-status.fallback {
+  color: #fcd34d;
+}

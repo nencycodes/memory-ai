@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MEMORY</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="header">
+      <div class="brand-mark">M</div>
+      <div>
+        <h1>MEMORY</h1>
+        <p>Private by design.</p>
+      </div>
+    </header>
+    <div id="aiStatus" class="ai-status" aria-live="polite">Checking local AI...</div>
+
+    <div class="privacy-card">
+      <span>🔒</span>
+      <div>
+        <strong>Your data stays local</strong>
+        <p>Nothing is remembered unless you explicitly choose it.</p>
+      </div>
+    </div>
+
+    <button id="rememberBtn" class="primary-btn">🧠 Remember this page</button>
+    <div id="status" class="status-text" aria-live="polite"></div>
+
+    <div class="folder-indexer">
+      <label for="folderPath">Choose a folder to index</label>
+      <div class="folder-controls">
+        <input id="folderPath" type="text" placeholder="D:\\Documents\\Research" />
+        <button id="indexFolderBtn" type="button" title="Index chosen folder" aria-label="Index chosen folder">Index</button>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="search-section">
+      <label for="searchInput" class="section-label">What do you remember?</label>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Try: Java internships and Spring Boot"
+        autocomplete="off"
+      />
+      <div id="results" class="results"></div>
+    </section>
+  </div>
+
+  <script src="popup.js?v=20261005"></script>
+</body>
+</html>

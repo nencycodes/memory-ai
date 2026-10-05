@@ -1,0 +1,8 @@
+Cloud platform comparison notes:
+
+AWS and Azure are both strong cloud providers for application deployment.
+
+AWS is often preferred for mature infrastructure tooling, while Azure integrates well with enterprise Microsoft workloads and Java workloads.
+
+For backend services, consider Azure App Service, Container Apps, and managed databases.
+Use a cloud comparison checklist before choosing a platform.

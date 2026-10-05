@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+sentence-transformers
+pypdf
+python-docx
+rapidocr-onnxruntime
+google-genai
+Pillow
+python-dotenv
